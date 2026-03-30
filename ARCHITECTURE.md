@@ -55,10 +55,10 @@ Found empirically. Not guesses. See `research/grid_sweep_summary.csv`.
 LOCKED_PARAMETERS = {
     "ALPHA":                0.3,
     "GAMMA_Q":              0.12,
-    "THETA_V":              1.5,
+    "THETA_V":              0.18,
     "LAMBDA":               0.8,
     "SIGMA_NOISE":          0.01,
-    "SIGMA_V":              0.25,
+    "SIGMA_V":              0.020,
     "ENG_DECAY_ON_IGNORE":  0.001,
     "ENG_BOOST_ON_ACK":     0.02,
     "ENG_PASSIVE_RECOVERY": 0.0002,

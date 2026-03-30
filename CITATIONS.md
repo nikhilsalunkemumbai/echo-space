@@ -5,7 +5,7 @@
 ## Citing the system (preprint)
 
 ```
-[Author name]. (2026). The Volatility Echo Rehearsal System: Design, Calibration,
+NIKHIL ASHOK SALUNKE. (2026). The Volatility Echo Rehearsal System: Design, Calibration,
 and Research Rationale for a Simulation-Based Approach to Training Anticipatory
 Intuition in Digital Civic Life. arXiv:PLACEHOLDER.
 https://arxiv.org/abs/PLACEHOLDER
@@ -16,7 +16,7 @@ https://arxiv.org/abs/PLACEHOLDER
 ## Citing the study protocol
 
 ```
-[Author name]. (2026). Training Anticipatory Intuition for Delayed Social
+NIKHIL ASHOK SALUNKE. (2026). Training Anticipatory Intuition for Delayed Social
 Consequences Through Simulation: Protocol for a Randomized Controlled Trial
 of the Volatility Echo Rehearsal System. JMIR Research Protocols.
 [DOI to be added on publication]
@@ -27,15 +27,15 @@ of the Volatility Echo Rehearsal System. JMIR Research Protocols.
 ## Citing the software
 
 ```
-[Author name]. (2026). ECHO — Volatility Echo Rehearsal System (v1.0).
-GitHub. https://github.com/[username]/echo-rehearsal-space
+NIKHIL ASHOK SALUNKE. (2026). ECHO — Volatility Echo Rehearsal System (v2.0).
+GitHub. https://github.com/nikhilsalunkemumbai/echo-rehearsal-space
 ```
 
 ---
 
 ## Pre-registration
 
-OSF pre-registration: https://osf.io/PLACEHOLDER
+OSF pre-registration: https://osf.io/c69td
 
 ---
 
