@@ -67,6 +67,30 @@ LOCKED_PARAMETERS = {
 }
 ```
 
+## Interactive recalibration note
+
+The grid sweep (research/grid_sweep_simulator.py) ran all 9 agents
+posting simultaneously every turn. In interactive sessions, one agent
+posts per turn at most. Volatility accumulates approximately 9× more
+slowly in interactive play.
+
+ALPHA, GAMMA_Q, and LAMBDA are unchanged from the grid sweep — they
+govern how individual shocks affect V and remain correct.
+
+THETA_V and SIGMA_V were recalibrated for the interactive posting rate:
+
+    Grid sweep values:    THETA_V=1.5,  SIGMA_V=0.25  (multi-agent)
+    Interactive values:   THETA_V=0.18, SIGMA_V=0.020 (single-agent)
+
+Verified across 500 interactive sessions:
+    Mixed play:     ~0.70 crises/session, 49% pct_with_crisis
+    All-Pause:      ~0.05 crises/session  (good stewardship)
+    All-QuickReact: ~2.55 crises/session  (reckless stewardship)
+
+The rehearsal band is preserved. Action differentiation is confirmed.
+The grid sweep data remains valid as calibration evidence for the
+multi-agent simulation regime.
+
 ---
 
 ## Session logging schema
