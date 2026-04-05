@@ -177,3 +177,12 @@ No numbers. No bars. No percentages. The player reads the community the way you 
 
 This is Article II in the architecture. The system knows everything. The player sees this.
 
+---
+
+## Entry 012 — The research track moves
+The study protocol was originally intended for JMIR Research Protocols. The strategy changed.
+JMIR charges USD 1,900 on acceptance for unfunded authors. The International Journal of Serious Games charges nothing — no submission fee, no APC, ever. Both are peer-reviewed. IJSG is indexed in Scopus and ESCI (Web of Science Core Collection). The protocol content is identical. The decision was purely practical: this project is self-funded, and zero cost is the right cost.
+The protocol was submitted to IJSG on 03 April 2026. It is under review.
+The OSF pre-registration was updated with an addendum documenting the journal change, the THETA_V recalibration from 1.5 to 0.18 for interactive sessions, and the correction of the city from Mumbai to Pune. Pre-registrations are immutable by design. The addendum is the transparent record.
+The arXiv preprint (Paper B) is waiting on cs.HC endorsement. The endorsement code is issued. A response is pending.
+Both tracks are independent of the game track. Phase 3 is complete. Phase 4 — the Godot port — is next when there is time for it.
