@@ -151,7 +151,7 @@ Result: ~0.70 crises per session · 49.0% of sessions have at least one crisis �
 ## Repository structure
 
 ```
-echo-rehearsal-space/
+echo-space/
 ├── engine/
 │   └── README.md             # Engine withheld until RCT complete — see note
 ├── interfaces/
@@ -221,7 +221,7 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Contact
 
-Independent Researcher · Pune, India  
+Independent Researcher · Mumbai, India  
 [nikhilsalunke.mumbai@gmail.com]  
 ORCID: [0009-0005-6353-7707]  
 arXiv: [your arXiv link]
