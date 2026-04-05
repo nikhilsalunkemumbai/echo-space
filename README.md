@@ -70,17 +70,20 @@ The hidden stats are logged for research. They are never shown to the player.
 
 ## Current status
 
-**Phase 1 — Foundation complete.** The simulation engine is built, calibrated, and running. 34 real sessions logged.
+**Phase 3 — Pygame visual layer complete.** The simulation engine is built, calibrated, and running with a mood-responsive visual interface.
 
 - ✅ Python simulation engine with calibrated parameters
 - ✅ CLI interface
+- ✅ Pygame visual layer (mood-responsive backdrop)
 - ✅ JSONL session logging with hidden research stats
 - ✅ Grid sweep calibration (27 combinations · 13,500 simulated sessions)
 - ✅ Five technical whitepapers
-- 🔄 arXiv preprint (system description)
+- ✅ OSF pre-registration live and public
+- 🔄 arXiv preprint (system description — endorsement pending)
+- 🔄 Study protocol submitted to IJSG (under review)
 - 🔄 IEC ethics review in progress (for RCT)
-- ⏳ Pygame visual layer (Phase 3)
 - ⏳ Godot port (Phase 4)
+- ⏳ Playtesting + RCT (Phase 5)
 
 ---
 
@@ -92,7 +95,14 @@ The simulation engine is not published here yet — see `engine/README.md` for t
 
 **To run the calibration sweep yourself:**
 
-## How to run
+```bash
+pip install numpy
+python research/grid_sweep_simulator.py
+```
+
+This reproduces the parameter sweep that located the rehearsal band. Results will match `research/grid_sweep_summary.csv`.
+
+**To run the CLI interface (once engine is released):**
 
 ```bash
 pip install numpy
@@ -108,10 +118,6 @@ Optional backdrop art file (ASCII, mood-tagged):
 ```bash
 python interfaces/cli/session_runner.py --backdrop path/to/backdrop.txt
 ```
-
----
-
-This reproduces the parameter sweep that located the rehearsal band. Results will match `research/grid_sweep_summary.csv`.
 
 ---
 
@@ -138,7 +144,7 @@ These were found empirically through a 27-combination grid sweep across 13,500 s
 | THETA_V | 0.18 | Crisis threshold — where accumulated stress becomes crisis |
 | LAMBDA | 0.8 | Memory factor — how long stress persists |
 
-Result: ~0. 70crises per session · 49.0% of sessions have at least one crisis · median RMP baseline 0.971
+Result: ~0.70 crises per session · 49.0% of sessions have at least one crisis · median RMP baseline 0.971
 
 ---
 
@@ -173,7 +179,7 @@ echo-rehearsal-space/
 This project is accompanied by a research programme testing whether the Volatility Echo mechanism produces measurable shifts in decision latency and behavioral caution.
 
 - **System description preprint:** [arXiv:PLACEHOLDER](https://arxiv.org/abs/PLACEHOLDER)
-- **Study protocol:** Submitted to JMIR Research Protocols (IEC approval pending)
+- **Study protocol:** Submitted to International Journal of Serious Games (under review)
 - **Pre-registration:** [OSF:C69TD](https://osf.io/c69td)
 
 The research question: *Does experiencing delayed, attributed consequences in a simulation change how cautiously a person acts online — measured in real behavior, not self-report?*
@@ -185,8 +191,8 @@ The research question: *Does experiencing delayed, attributed consequences in a 
 | Phase | Status | Deliverable |
 |-------|--------|-------------|
 | 1 — CLI + GitHub | ✅ Complete | Public repo, README, whitepapers |
-| 2 — Devlog + itch.io | 🔄 In progress | Public presence, devlog |
-| 3 — Pygame visual layer | ⏳ Planned | First playable visual |
+| 2 — Devlog + itch.io | ✅ Complete | Public presence, devlog |
+| 3 — Pygame visual layer | ✅ Complete | First playable visual |
 | 4 — Godot port | ⏳ Planned | Downloadable binary |
 | 5 — Playtesting + RCT | ⏳ Planned | Behavioral data |
 | 6 — Web + publish | ⏳ Planned | Browser playable, research paper |
@@ -215,7 +221,7 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Contact
 
-Independent Researcher · Mumbai, India  
+Independent Researcher · Pune, India  
 [nikhilsalunke.mumbai@gmail.com]  
 ORCID: [0009-0005-6353-7707]  
 arXiv: [your arXiv link]

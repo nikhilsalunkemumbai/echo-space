@@ -58,7 +58,7 @@ The CLI interface processes the engine's output to present qualitative, non-nume
 
 *   **Mood**: Instead of displaying `V` (e.g., "Volatility: 0.73"), the interface presents categorical descriptors like "Stable," "Wavering," or "Tense."
 *   **Confidence**: Presented as "Unknown," rather than a precise numerical score.
-*   **Crisis Replay**: A narrative hint ("A past tension resurfaces.") is provided, avoiding direct blame or specific numerical attribution to `contrib_trace` entries.
+*   **Crisis Replay**: In v2.0, when a crisis fires, a past post is replayed with an amplified prefix and a neutral narrative caption: "An earlier tension resurfaces in the community now." The player sees which past turn contributed — not who to blame. The attribution is recency-weighted by contribution score, consistent with constitutional partial opacity.
 
 These choices are not limitations of the engine's capabilities but deliberate design decisions to:
 *   **Prevent Gamification**: Numeric displays invite optimization and "puzzle-solving," which contradicts the goal of a rehearsal space.

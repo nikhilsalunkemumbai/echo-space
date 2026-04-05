@@ -18,8 +18,8 @@ https://arxiv.org/abs/PLACEHOLDER
 ```
 NIKHIL ASHOK SALUNKE. (2026). Training Anticipatory Intuition for Delayed Social
 Consequences Through Simulation: Protocol for a Randomized Controlled Trial
-of the Volatility Echo Rehearsal System. JMIR Research Protocols.
-[DOI to be added on publication]
+of the Volatility Echo Rehearsal System. International Journal of Serious Games.
+[Under review — DOI to be added on publication]
 ```
 
 ---
@@ -28,7 +28,7 @@ of the Volatility Echo Rehearsal System. JMIR Research Protocols.
 
 ```
 NIKHIL ASHOK SALUNKE. (2026). ECHO — Volatility Echo Rehearsal System (v2.0).
-GitHub. https://github.com/nikhilsalunkemumbai/echo-rehearsal-space
+GitHub. https://github.com/nikhilsalunkemumbai/echo-space
 ```
 
 ---

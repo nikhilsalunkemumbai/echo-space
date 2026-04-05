@@ -11,6 +11,6 @@ The Volatility Echo simulation engine is not published here yet.
 - The locked parameters are documented in [ARCHITECTURE.md](../ARCHITECTURE.md)
 
 **When it will be published:**
-The full engine source code will be released here as open-source supplementary material when the results paper is submitted, following pre-registered RCT completion. Pre-registration is at https://osf.io/PLACEHOLDER.
+The full engine source code will be released here as open-source supplementary material when the results paper is submitted, following pre-registered RCT completion. Pre-registration is at https://osf.io/c69td.
 
 This is not gatekeeping. It is study integrity.

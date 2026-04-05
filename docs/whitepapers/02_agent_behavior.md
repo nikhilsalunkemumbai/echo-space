@@ -35,15 +35,15 @@ The `AgentManager` aggregates these individual decisions. In each turn, it ident
 
 ## 4. Post Generation and Attributes
 
-Once an agent is selected to post, they generate a `GeneratedPost` object. While the `text` of the post is currently a generic placeholder ("A community member raises a concern."), the crucial elements are its associated attributes, which determine its impact on the simulation:
+Once an agent is selected to post, they generate a `GeneratedPost` object via `engine/posts.py`. Posts are generated from a topic/perspective/template system with 15 topics and 10 true and 10 false perspectives per topic, producing varied, contextually grounded text without NLP dependencies. Each post carries:
 
-*   **`emotional_load`**: A float representing the intensity of sentiment carried by the post (e.g., 0.2 for low, 0.9 for high). This attribute is a primary driver of `Volatility (V)` updates in the core engine. It is randomly generated within a range (`0.2` to `0.9`) by the `Agent.generate_post_attributes()` method.
-*   **`latent_veracity`**: A float representing the underlying truthfulness or accuracy of the post (e.g., 0.3 for low, 0.9 for high). This attribute might be used in future expansions for deeper analysis but currently also randomly generated (`0.3` to `0.9`).
+*   **`emotional_load`**: A float representing the intensity of sentiment carried by the post. Sampled from a Beta distribution according to archetype (e.g., Troll: Beta(8,2) yielding high load; Expert: Beta(2,8) yielding low load). This is the primary driver of `Volatility (V)` updates in the core engine.
+*   **`latent_veracity`**: A float representing the underlying truthfulness of the post. Sampled by archetype (Expert: ~0.85; Troll: ~0.2; WellMeaning: ~0.5). Hidden from the player — contributes to opacity.
 *   **`poster_archetype`**: The archetype of the agent who created the post.
 *   **`poster_id`**: The unique ID of the posting agent.
-*   `topic` and `perspective`: Currently generic, but designed for future expansion to add narrative depth.
+*   **`topic`** and **`perspective`**: Drawn from the PostGenerator topic pool, producing contextually varied post text each session.
 
-The generation of these attributes, particularly `emotional_load`, is central to how agent actions translate into changes in the community's state.
+The generation of `emotional_load` by archetype is central to how agent actions translate into changes in community state — Trolls consistently generate high-shock posts, Experts low-shock, with WellMeaning agents producing the middle-range variability that creates ambiguity for the player.
 
 ## 5. Dynamic Engagement Update
 

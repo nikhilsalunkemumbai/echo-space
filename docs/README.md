@@ -23,7 +23,7 @@ Five technical papers covering the system from theory to architecture.
 | Grid sweep simulator | [research/grid_sweep_simulator.py](../research/grid_sweep_simulator.py) |
 | Grid sweep results | [research/grid_sweep_summary.csv](../research/grid_sweep_summary.csv) |
 | arXiv preprint | https://arxiv.org/abs/PLACEHOLDER |
-| OSF pre-registration | https://osf.io/PLACEHOLDER |
+| OSF pre-registration | https://osf.io/c69td |
 
 ---
 

@@ -30,7 +30,7 @@ Each layer can only see what is below it, never above. This is not a convention.
 2. Player chooses: QuickReact / Pause & Assess / Step Back / Deep Read
 3. Shock calculated: `s = GAMMA_Q × emo × (1 + 1.5 × emo²)`
 4. Volatility updates: `V = LAMBDA × V + ALPHA × |s| + η`
-5. Crisis probability: `p = sigmoid((V − THETA_V) / 0.25)` — Bernoulli draw
+5. Crisis probability: `p = sigmoid((V − THETA_V) / SIGMA_V)` — Bernoulli draw
 6. Agent engagement scores update silently (RMP)
 7. Player sees: mood category only
 
